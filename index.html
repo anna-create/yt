@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>UnionPay</title>
+	<meta charset="utf-8">
+	<meta description="UnionPay YandexTaxi landing">
+	<meta keywords="UnionPay, YandexTaxi">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/snh3uqv.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+	<div class="button"><a href="#code">Получить код</a></div>
+	<div class="map"></div>
+	<div class="hide-on-mobile animation">
+		<img class="hide-on-mobile car" src="img/car.png" alt="">
+		<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).on('scroll', function(){
+				$('.car').css("left", Math.max(0 + 1*window.scrollY) + "px", 0);
+			})
+		</script>
+		<img class="hide-on-mobile upcard" src="img/upcard.png">
+		<script type="text/javascript">
+			$(document).on('scroll', function(){
+				$('.upcard').css("right", Math.max(0 + 1*window.scrollY) + "px", 0);
+			})
+		</script>
+	</div>
+	<div class="rules">
+		<div class="rulesColumn">
+			<p class="bold">Всем держателям карт UnionPay</p>
+			<p class="normal">дарим промокод в&nbsp;Яндекс.Такси номиналом в&nbsp;1000&nbsp;рублей <br><a href="https://www.unionpayintl.com/cardholderServ/serviceCenter/merchant?language=ru" target="_blank">Полные правила</a></p>
+		</div>
+		<div class="phone_wrapper">
+			<img class="phone" src="img/phone.png" data-aos="fade-up">
+			<img class="tab_phone" src="img/phone_tab.png" data-aos="fade-up">
+		</div>
+	</div>
+	<div class="blue">
+		<div class="blueText">
+			<p class="bold">Карта UnionPay</p>
+			<p class="normal">это скидки до&nbsp;30% и&nbsp;множество других приятных бонусов в&nbsp;ресторанах, торговых центрах, магазинах беспошлинной торговли, аутлетах, отелях и&nbsp;музеях в&nbsp;России и&nbsp;по&nbsp;всему&nbsp;миру</p>
+			<div class="blueA">
+				<a href="http://www.unionpayintl.com/cardholderServ/serviceCenter/merchant?language=ru" target="_blank">Узнайте о&nbsp;всех привилегиях</a>
+			</div>
+		</div>
+		<div class="para" data-aos="zoom-in-up"></div>
+	</div>
+	<div class="moscow">
+		<div><a name="code"></a></div>
+		<div class="card" data-aos="zoom-in-down">
+			<p class="cardText">Введите первые 6 и&nbsp;последние 4 цифры Вашей карты UnionPay и&nbsp;получите промокод на&nbsp;скидку 1000 рублей в&nbsp;Яндекс Такси</p>
+			<form action="">
+				<div class="numbers">
+					<fieldset>
+						<input type="number" min="4" maxlength="4" name="number">
+					</fieldset>
+					<span>00</span><span>0000</span>
+					<fieldset>
+						<input type="number" maxlength="6" min="6" name="numberTwo">
+					</fieldset>
+				</div>
+				<fieldset>
+					<input type="submit" name="submit">
+				</fieldset>
+			</form>
+		</div>
+		<div class="text">
+			<p class="bold">Промокод выдается один раз за&nbsp;акцию</p>
+			<p class="normal">Номер карты, который вы вводите в&nbsp;поле, должен совпадать с&nbsp;картой, привязанной для&nbsp;оплаты Яндекс.Такси</p>
+		</div>
+	</div>
+	<div class="white">
+		<p class="bold_center">ГДЕ ОФОРМИТЬ КАРТУ</p>
+		<p class="normal_center">Вы можете оформить карту UnionPay в&nbsp;отделениях следующих банков</p>
+	</div>
+	<div class="place">
+		<div class="banks">
+		<div class="department">
+			<a href="https://www.gazprombank.ru/personal/cards/745947/" target="_blank">
+				<div class="department_inner">
+					<div class="department_top">
+						<div class="department_image">
+							<img src="img/gazprom.png" alt="">
+						</div>
+					</div>
+					<div class="department_bottom">
+						<div class="department_link">Подробнее</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="department">
+			<a href="https://www.rshb.ru/natural/card-detail/personal/" target="_blank">
+				<div class="department_inner">
+					<div class="department_top">
+						<div class="department_image">
+							<img src="img/rosselhoz.png" alt="">
+						</div>
+					</div>
+					<div class="department_bottom">
+						<div class="department_link">Подробнее</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="department">
+			<a href="https://www.vostbank.ru/client/service/akcii_i_bonusi/rasplachivaytes-kartoy-unionpay-i-poluchayte-preimushchestva/" target="_blank">
+				<div class="department_inner">
+					<div class="department_top">
+						<div class="department_image">
+							<img src="img/vostok.png" alt="">
+						</div>
+					</div>
+					<div class="department_bottom">
+						<div class="department_link">Подробнее</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="department">
+			<a href="https://solid.ru/retail/cards/debit-card/" target="_blank">
+				<div class="department_inner">
+					<div class="department_top">
+						<div class="department_image">
+							<img src="img/solidarnost.png" alt="">
+						</div>
+					</div>
+					<div class="department_bottom">
+						<div class="department_link">Подробнее</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="department">
+			<a href="https://www.pskb.com/debit-cards/bank-card-unionpay/" target="_blank">
+				<div class="department_inner">
+					<div class="department_top">
+						<div class="department_image">
+							<img src="img/primsoc.png" alt="">
+						</div>
+					</div>
+					<div class="department_bottom">
+						<div class="department_link">Подробнее</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="department">
+			<a href="https://www.primbank.ru/cards/individual_cards/karta-unionpay-gold/" target="_blank">
+				<div class="department_inner">
+					<div class="department_top">
+						<div class="department_image">
+							<img src="img/primore.png" alt="">
+						</div>
+					</div>
+					<div class="department_bottom">
+						<div class="department_link">Подробнее</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="department">
+			<a href="https://www.bspb.ru/retail/cards/unionpay-classic/?bspb_param=analytics-link-unionpay" target="_blank">
+				<div class="department_inner">
+					<div class="department_top">
+						<div class="department_image">
+							<img src="img/spb.png" alt="">
+						</div>
+					</div>
+					<div class="department_bottom">
+						<div class="department_link">Подробнее</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	</div>
+	<div class="questions">
+		<div class="question_text">
+			<p class="bold">Если у&nbsp;Вас остались вопросы</p>
+			<p class="normal">воспользуйтесь формой обратной&nbsp;связи</p>
+		</div>
+		<form action="">
+			<fieldset>
+				<label for="text">Имя</label>
+				<input type="text" name="fio" placeholder="Иван Иванов">
+				<label for="email">Email</label>
+				<input type="email" name="email" placeholder="ivan@example.com" required>
+				<label for="message">Сообщение</label>
+				<textarea name="message" placeholder="Введите ваше сообщение" required></textarea>
+				<input type="submit" name="check">
+			</fieldset>
+		</form>
+	</div>
+	<div class="video-wrapper">
+	    <video src="media/moving.mp4" autoplay muted loop></video>
+	    <img src="img/uplogo.png" alt="" class="img-video-1"/>
+	</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
